@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'amnestiadistressed';
+    src: url("../fonts/amnestia-webfont.woff2") format("woff2"),
+      url("../fonts/amnestia-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-size: 20px;
+    font-family:'amnestiadistressed';
+    background-color: white;
+  }
+  .titulos h1{
+    text-align: center;
+    margin: 50px auto;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  section[id]{
+    scroll-margin-top: 80px;
+  }
+  /* comienzo del header*/
+  
+  header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    z-index: 100;
+  }
+  .max-width {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .bienvenidos h2 {
+      padding-top: 8px;
+    margin: 0 5px;
+    font-size: 1.2em;
+    color: white;
+  }
+  .contactos ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .contactos ul li{
+    text-align: center;
+    margin: 0;
+    padding: 2px 5px 1px 0;
+  }
+  .face{
+    color: blue;
+    font-size: 2rem;
+  }
+  .instagram .fab {
+    padding-top: 1px;
+    font-size: 2.1rem;
+    padding-left: 10px;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* fin del header*/
+  
+  /* comienzo del nav*/
+  
+  .navegador{
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px black;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  nav ul li{
+    display: inline-block;
+    width: 19.5%;
+    transition: all 1s ease;
+  }
+  nav ul li a{
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+    color: black;
+    transition: all 1s ease;
+  }
+  nav ul li:hover, li.active{
+    background-color: gray;
+    transition: .3s;
+  
+  }
+  nav ul li:hover a, li.active a{
+    color:yellow;
+    transition: .3s;
+  }
+  
+  /* fin del nav*/
+  /* incio footer */
+
+footer {
+  background-color: #ccc;
+  padding: 25px 0;
+  text-align: center;
+  clear: both;
+}
+
+/* fin de footer*/
