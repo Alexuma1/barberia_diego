@@ -113,9 +113,10 @@
 
 footer {
   background-color: #ccc;
-  padding: 25px 0;
+  padding: 30px 0;
   text-align: center;
   clear: both;
+  font-size: 1.5rem;
 }
 
-/* fin de footer*/
+  /* fin de footer*/

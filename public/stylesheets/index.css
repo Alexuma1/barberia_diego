@@ -1,9 +1,10 @@
 /* comienzo del incio*/
 
-section img {
+section .inicioImg {
   padding-top: 72px;
   width: 100%;
   margin: 0;
+  height: 1200px;
 }
 
 /* fin de incio*/
@@ -42,28 +43,12 @@ section img {
 .tendenciaimg1 {
   grid-area: img1;
 }
-.tendenciaimg1 img{
-  transition: all 3s ease;
-}
-.tendenciaimg1 img:last-child{
-  display: none;
-}
-.tendenciaimg1:hover img:first-child{
-  /* animation: otraimagen 1s ease; */
-  /* animation-fill-mode: forwards; */
-  display: none;
-}
-/* .tendenciaimg1:hover img:last-child{
-  display: block;
-} */
-
 .tendenciaimg2 {
   grid-area: img2;
 }
 .tendenciaimg3 {
   grid-area: img3;
 }
-
 .tendenciaimg4 {
   grid-area: img4;
 }
@@ -73,25 +58,16 @@ section img {
 .tendenciaimg6 {
   grid-area: img6;
 }
-.tendenciaimg7 {
-  grid-area: img7;
-}
-.tendenciaimg8 {
-  grid-area: img8;
-}
-.tendenciaimg9 {
-  grid-area: img9;
-}
+
 .tendencia {
   display: inline-grid;
   grid-template-columns: 320px 320px 320px;
+  grid-template-rows: 425px 425px 426px 425px;
   grid-template-areas:
     "img1 img1 img2"
     "img1 img1 img3"
     "img4 img5 img5"
-    "img6 img5 img5"
-    "img7 img7 img8"
-    "img7 img7 img9";
+    "img6 img5 img5";
 }
 .img {
   width: 100%;
@@ -99,33 +75,41 @@ section img {
   box-sizing: border-box;
 }
 
-@keyframes otraimagen {
-  20% {
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-  }
-  40% {
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-  }
-  60% {
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
-    -moz-filter: blur(6px);
-  }
-  80% {
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    -moz-filter: blur(8px);
-  }
-  100% {
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-  }
+/* inicio animacion cambiar imagen */
+
+.tendenciaimg1 .img:last-child,.tendenciaimg1:hover .img:first-child,
+.tendenciaimg2 .img:last-child,.tendenciaimg2:hover .img:first-child,
+.tendenciaimg3 .img:last-child,.tendenciaimg3:hover .img:first-child,
+.tendenciaimg4 .img:last-child,.tendenciaimg4:hover .img:first-child,
+.tendenciaimg5 .img:last-child,.tendenciaimg5:hover .img:first-child,
+.tendenciaimg6 .img:last-child,.tendenciaimg6:hover .img:first-child{
+  display: none;
 }
+.tendenciaimg1:hover .img:last-child,
+.tendenciaimg2:hover .img:last-child,
+.tendenciaimg3:hover .img:last-child,
+.tendenciaimg4:hover .img:last-child,
+.tendenciaimg5:hover .img:last-child,
+.tendenciaimg6:hover .img:last-child{
+  display: block;
+  filter: grayscale(100%);
+  animation: opacidad 3s ease;
+  animation-fill-mode:forwards;
+}
+@keyframes opacidad{
+  10%{filter:grayscale(90%);}
+  20%{filter:grayscale(80%);}
+  30%{filter:grayscale(70%);}
+  40%{filter:grayscale(60%);}
+  50%{filter:grayscale(50%);}
+  60%{filter:grayscale(40%);}
+  70%{filter:grayscale(30%);}
+  80%{filter:grayscale(20%);}
+  90%{filter:grayscale(10%);}
+  100%{filter:grayscale(0%);}
+}
+
+/* fin de animacion cambiar imagen */
 
 /* fin de galeria*/
 
@@ -150,7 +134,7 @@ section img {
   box-sizing: border-box;
   float: left;
   border-right: black solid 2px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .contacto table {
   margin-left: 60px;
@@ -191,4 +175,5 @@ td:nth-child(odd) {
 .mapa {
   max-width: 100%;
 }
+
 /* fin de contactanos */
