@@ -8,30 +8,39 @@
 
 <section id="sobre-mi" class="titulos max-width">
     <h1>Sobre Mi</h1>
+    {{!-- <div id="imagen">
+    </div> --}}
     <div class="carousel">
-        <div id="imagen">
-            <button id="retroceder">Retroceder</button>
-            <button id="avanzar">Avanzar</button>
-            <div class="controles">
-                <button id="play">Play</button>
-                <button id="stop" disabled>Stop</button>
-            </div>
+        <button class="boton_carousel boton_carousel_izquierda esta_oculto">
+            <img src="/images/flechas/izquierda.svg.png" alt="">
+        </button>
+        <div class="carousel_contenedor_marca">
+            <ul class="carousel_marca">
+                <li class="carousel_diapositiva activo">
+                    <img class="carousel_imagenes" src="/images/1.jpeg" alt="" srcset="">
+                </li>
+                <li class="carousel_diapositiva">
+                    <img class="carousel_imagenes" src="/images/2.jpeg" alt="" srcset="">
+                </li>
+                <li class="carousel_diapositiva">
+                    <img class="carousel_imagenes" src="/images/3.jpeg" alt="" srcset="">
+                </li>
+            </ul>
         </div>
+        <button class="boton_carousel boton_carousel_derecha">
+            <img src="/images/flechas/derecha.svg.png" alt="">
+        </button>
+    </div>
+    <div class="carousel_nav">
+        <button class="indicador_carousel activo"></button>
+        <button class="indicador_carousel"></button>
+        <button class="indicador_carousel"></button>
     </div>
     <div>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga iure porro dolorem.
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga iure porro dolorem.
             Doloribus
             molestiae, cupiditate unde laborum consequatur quidem aliquam asperiores nemo nostrum doloremque cum
-            eligendi sed labore optio?</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos reiciendis dolor aperiam velit,
-            doloremque
-            officia officiis eum, optio veritatis voluptates fuga accusantium itaque ratione provident cum ab
-            repellendus temporibus deleniti?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, laborum. Suscipit beatae quam
-            fugit,
-            eveniet sit, deserunt architecto quod repellendus in culpa commodi dignissimos possimus esse illo
-            explicabo iusto consectetur!
-        </p>
+            eligendi sed labore optio?</h3>
     </div>
 </section>
 <!-- fin de sobre-mi -->
@@ -40,12 +49,18 @@
 <section class="max-width titulos" id="galeria">
     <h1>Galeria</h1>
     <div class="tendencia">
-        <div data-aos="fade-right" data-aos-duration="1000" class="tendenciaimg1"><img class="img" src="images/1.jpeg"/><img class="img" src="images/img_frente/1.jpeg"/></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="tendenciaimg2"><img class="img" src="images/2.jpeg"/><img class="img" src="images/img_frente/2.jpeg"/></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="tendenciaimg3"><img class="img" src="images/3.jpeg"/><img class="img" src="images/img_frente/3.jpeg"/></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="tendenciaimg4"><img class="img" src="images/4.jpeg"/><img class="img" src="images/img_frente/4.jpeg"/></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="tendenciaimg5"><img class="img" src="images/5.jpeg"/><img class="img" src="images/img_frente/5.jpeg"/></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="tendenciaimg6"><img class="img" src="images/6.jpeg"/><img class="img" src="images/img_frente/6.jpeg"/></div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="tendenciaimg1"><img class="img"
+                src="images/1.jpeg" /><img class="img" src="images/img_frente/1.jpeg" /></div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="tendenciaimg2"><img class="img"
+                src="images/2.jpeg" /><img class="img" src="images/img_frente/2.jpeg" /></div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="tendenciaimg3"><img class="img"
+                src="images/3.jpeg" /><img class="img" src="images/img_frente/3.jpeg" /></div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="tendenciaimg4"><img class="img"
+                src="images/4.jpeg" /><img class="img" src="images/img_frente/4.jpeg" /></div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="tendenciaimg5"><img class="img"
+                src="images/5.jpeg" /><img class="img" src="images/img_frente/5.jpeg" /></div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="tendenciaimg6"><img class="img"
+                src="images/6.jpeg" /><img class="img" src="images/img_frente/6.jpeg" /></div>
     </div>
 </section>
 
