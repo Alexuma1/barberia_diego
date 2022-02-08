@@ -1,0 +1,34 @@
+<!-- incio header -->
+
+<header class="fijo">
+    <div class="header max-width bienvenidos">
+        <h2>Administrador</h2>
+    </div>
+</header>
+<!-- fin de header -->
+{{!-- inicio del body --}}
+<div class="contenedor max-width">
+    <img src="../images/logo.jpeg" alt="">
+    <form class="usuarios" action="/admin/login" method="post">
+        {{!-- nombre de usuario --}}
+        <input type="text" placeholder="Usuario" name="usuario">
+        {{!-- contraseña --}}
+        <input type="password" placeholder="Contraseña" name="password">
+        {{!-- boton enviar --}}
+        <button class="iniciar_sesion" type="submit">Iniciar Sesion</button>
+        {{!-- olvido contraseña o usuario --}}
+        <div class="pass">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="nueva_cuenta">
+            {{!-- nueva cuenta --}}
+            <a href="#">Crear cuenta nueva</a>
+        </div>
+    </form>
+</div>
+{{#if error}}
+<p>Usuario y/o contraseña incorrectos</p>
+{{/if}}
+
+
+{{!-- fin del body --}}
