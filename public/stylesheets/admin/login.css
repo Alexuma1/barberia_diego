@@ -1,39 +1,4 @@
-  /* comienzo del nav*/
-  
-  .navegador{
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px black;
-  }
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  nav ul li{
-    display: inline-block;
-    width: 49%;
-    transition: all 1s ease;
-  }
-  nav ul li a{
-    text-decoration: none;
-    padding: 10px 0;
-    display: block;
-    text-align: center;
-    color: black;
-    transition: all 1s ease;
-    font-size: 1.5rem;
-  }
-  nav ul li:hover, li.active{
-    background-color: gray;
-    transition: .3s;
-  }
-  nav ul li:hover a, li.active a{
-    color:yellow;
-    transition: .3s;
-  }
-  
-  /* fin del nav*/
-  /* inicio del login */
+ /* inicio del login */
 
   .contenedor{
     margin-top: 100px;
@@ -42,6 +7,7 @@
     width: 50%;
     float: left;
     margin-bottom: 20px;
+    height: 680px;
   }
   .usuarios{
     float: right;
