@@ -76,11 +76,6 @@ section .inicioImg {
 .esta_oculto{
   display: none;
 }
-/* 
-#imagen {
-  height: 500px;
-} */
-
 .sobremi {
   text-align: center;
 }
