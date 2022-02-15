@@ -73,8 +73,16 @@
 #sobre-mi{
   margin-top: 120px;
 }
-#sobre-mi h3{
+#sobre-mi h5{
   text-align: end;
+  font-weight: 200;
+}
+#sobre-mi a{
+  text-decoration: none;
+  background-color: red;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
 }
  
 /* fin de sobre mi */
