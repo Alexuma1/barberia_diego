@@ -87,14 +87,38 @@
  
 /* fin de sobre mi */
  /* comienzo de galeria*/
+
   /* #galeria{
     margin-top: 120px;
   } */
+
   /* fin de galeria */
-/* 
-  .contactanos{
+  /* comienzo de horarios */
+
+  #contactanos{
     text-align: center;
   }
-  table{
-    margin: 0 auto;
-  } */
+  #contactanos table{
+    margin: 30px auto;
+    border-collapse: collapse;
+  }
+  table tr td{
+    padding: 10px 5px;
+  }
+  #contactanos table tr a{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+  }
+  tr:nth-child(odd){
+    background-color: #999;
+  }
+  tr:nth-child(even){
+    background-color: white;
+  }
+  #contactanos table tr a:hover{
+    color:yellow;
+    transition: .3s;
+  }
+  /* fin de horarios */

@@ -12,48 +12,30 @@
     <h1>Galeria</h1>
     <div class="tendencia">
     </div>
-</section>
+</section> --}}
 
 <!-- fin de galeria -->
 <!-- inicio de contactanos -->
 
-<section id="contactanos" class="titulos max-width contactanos">
+<section id="contactanos" class="titulos max-width">
     <h1>Contactanos</h1>
     <h2>Horarios y dias de Atencion</h2>
     <table>
         <tr>
+            <td>#</td>
             <td>dias</td>
             <td>horarios</td>
+            <td></td>
         </tr>
+        {{#each horarios}}
         <tr>
-            <td>Lunes</td>
-            <td>09:00 a 18:00</td>
+            <td>{{id}}</td>
+            <td>{{dias}}</td>
+            <td>{{horarios}}</td>
+            <td><a href="">Cambiar Horario <i class="fa-solid fa-pen-to-square"></i></a></td>
         </tr>
-        <tr>
-            <td>Martes</td>
-            <td>09:00 a 18:00</td>
-        </tr>
-        <tr>
-            <td>Miercoles</td>
-            <td>09:00 a 18:00</td>
-        </tr>
-        <tr>
-            <td>Jueves</td>
-            <td>09:00 a 18:00</td>
-        </tr>
-        <tr>
-            <td>Viernes</td>
-            <td>09:00 a 18:00</td>
-        </tr>
-        <tr>
-            <td>Sabado</td>
-            <td>09:00 a 18:00</td>
-        </tr>
-        <tr>
-            <td>Domingo</td>
-            <td>Cerrado</td>
-        </tr>
+        {{/each}}
     </table>
-</section> --}}
+</section>
 
 <!-- fin de contactanos -->
