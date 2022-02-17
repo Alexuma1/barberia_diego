@@ -1,0 +1,9 @@
+<div class="editarHorarios">
+    <h2>Editar Horario</h2>
+    <form action="/admin/cambios/horarios" method="post">
+        <input type="text" class="form-control" id="dias" placeholder="dia" name="dias" value="{{horario.dias}}" disabled>
+        <input type="text" class="form-control" id="horarios" placeholder="10:00 a 18:00" name="horarios" value="{{horario.horarios}}">
+        <button type="submit">Cambiar</button>
+        <input type="hidden" name="id" value="{{horario.id}}">
+    </form>
+</div>

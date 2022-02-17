@@ -68,10 +68,12 @@
   text-decoration:underline;
   transition: .3s;
 }
+
 /* fin del login */
 /* incio de sobre mi */
+
 #sobre-mi{
-  margin-top: 120px;
+  margin-top: 80px;
 }
 #sobre-mi h5{
   text-align: end;
@@ -99,7 +101,7 @@
     text-align: center;
   }
   #contactanos table{
-    margin: 30px auto;
+    margin: 0 auto;
     border-collapse: collapse;
   }
   table tr td{
@@ -123,3 +125,13 @@
     transition: .3s;
   }
   /* fin de horarios */
+  /* comienzo editar horarios */
+  .editarHorarios{
+    margin-top: 80px;
+    text-align: center;
+  }
+  .editarHorarios input{
+    text-align: center;
+  }
+
+  /* fin de editar horarios */

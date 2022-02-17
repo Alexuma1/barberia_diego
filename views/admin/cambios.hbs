@@ -22,17 +22,15 @@
     <h2>Horarios y dias de Atencion</h2>
     <table>
         <tr>
-            <td>#</td>
             <td>dias</td>
             <td>horarios</td>
-            <td></td>
+            <td>Cambios</td>
         </tr>
         {{#each horarios}}
         <tr>
-            <td>{{id}}</td>
             <td>{{dias}}</td>
             <td>{{horarios}}</td>
-            <td><a href="">Cambiar Horario <i class="fa-solid fa-pen-to-square"></i></a></td>
+            <td><a href="/admin/cambios/horarios/{{id}}">Cambiar Horario<i class="fa-solid fa-pen-to-square"></i></a></td>
         </tr>
         {{/each}}
     </table>
